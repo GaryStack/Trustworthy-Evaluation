@@ -88,7 +88,7 @@ class OpenAIQuery:
             #myurl = "https://chatapi.onechat.fun/v1/completions"
             
             url = "https://chatapi.onechats.top/v1"
-            api_key = "sk-ERMje880txuZZ3XTE226B89902Eb4631B26676A682698291"
+            api_key = ""
             client = OpenAI(base_url=url, api_key=api_key)
             #print(arguments["messages"])
             resp=client.chat.completions.create(
