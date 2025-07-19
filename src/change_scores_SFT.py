@@ -197,7 +197,7 @@ def dynamic_patch(args, use_base_model):
                                     index=None,
                                     hook_fn=layer_patch_hook
                                 )
-            for i in range(31):
+            for i in range(32):
                 for j in range(0, 14336, 512): # 11008 llama2-7b 256
                     row = [[i, j + k] for k in range(512)]
                     topk_index = (torch.tensor(row))
